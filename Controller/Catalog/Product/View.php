@@ -39,8 +39,10 @@ class View extends \Magento\Catalog\Controller\Product\View
                 $firstParentId     = array_shift($productCategories);
 
                 if (!empty($firstParentId)) {
-                    $category = $this->categoryRepository->get($firstParentId);
-                    $this->messageManager->addNoticeMessage('The product you tried to view is not available but here are some other options instead.');
+                    $noticeMessage = $this->redirectHelper->getNoticeMessage();
+                    $category      = $this->categoryRepository->get($firstParentId);
+
+                    $this->messageManager->addNoticeMessage($noticeMessage);
 
                     return $this->resultRedirectFactory->create()->setUrl($category->getUrl());
                 }

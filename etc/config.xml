@@ -5,6 +5,7 @@
         <redirect>
             <general>
                 <enable>1</enable>
+                <notice><![CDATA[The product you tried to view is not available but here are some other options instead.]]></notice>
             </general>
         </redirect>
     </default>
