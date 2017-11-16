@@ -15,7 +15,7 @@
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="notice" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="notice" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Notice Message</label>
                 </field>
             </group>
